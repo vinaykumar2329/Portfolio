@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}h1{
+  font-family: "Poppins", sans-serif;
+  font-size: xx-large;
+  color:white;
+  background-color: black;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg,rgb(22, 22, 22),grey );
+  animation: colorchange 8s ease-in-out infinite;
+  background-size: 200% 200%;
+  min-height: 8vh;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 5px 10px whitesmoke;
+  padding: 30px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: larger;
+  transition: 0.3s;
+}
+nav a {
+  margin-left: 30px;
+}
+a:hover {
+  color: aqua;
+}
+#home {
+  height: 90vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 0%;
+  background-image: url("main.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+#text {
+  color: black;
+  font-size: xx-large;
+  font-family: "Poppins", sans-serif;
+}
+#resume{
+  padding: 10px;
+  background-color: black;
+  color: whitesmoke;
+  width: 200px;
+}
+#seemore{
+  /* background-color: black; */
+  color: whitesmoke;
+  width: 100px;
+}
+
+#about {
+  background: linear-gradient(90deg, maroon, #fbd786, #ff2027);
+  background-size: 200% 200%;
+  animation: colorchange 8s ease-in-out infinite;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0%;
+}
+#aboutcontainer{
+  display: flex;
+  flex-direction: row;
+}
+#aboutme{
+  width: 50vw;
+  padding: 30px;
+  box-shadow: 10px 15px 10px black;
+  border-radius: 15px;
+ font-size: large;
+}
+#aboutimg {
+  height: 60vh;
+  box-sizing: border-box;
+  box-shadow:  -.5em .7em .5em 2px black;
+  border-radius: 50%;
+}
+
+#Certificates {
+  background: linear-gradient(135deg, rgb(202, 94, 202),wheat, rgb(163, 3, 163));
+  background-size: 200% 200%;
+  animation: colorchange 10s ease-in-out infinite;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#certificatescontainer{
+  display: flex;
+  gap: 20px;
+  padding: 80px;
+  box-shadow:  10px 10px 15px 10px black;
+  border-radius: 15px;
+}
+.certificate{
+  height: 50vh;
+  width: 20vw;
+  background-color: black; 
+  box-shadow:  10px 15px 10px black;
+}
+.certificate img{
+  height: 50vh;
+  width: 20vw;
+  background-color: grey;
+}
+.certificate img:hover{
+  transform: scale(1.5);
+}
+#Contact {
+  background: linear-gradient(180deg, orangered, #fbd786, #f37b2a);
+  background-size: 200% 200%;
+  animation: colorchange 10s ease-in-out infinite;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#contactcontainer{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  font-size: larger;
+  background-color: black ;
+  box-shadow: 0 0 10px whitesmoke;
+  padding: 20px; 
+  border-radius: 15px;
+}
+#formcontainer{
+  background-color: black;
+  color: white;
+  width: 30vw;
+}
+#contactform{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  font-family: sans-serif;
+}
+input{
+  padding: 10px;
+  font-size: medium;  
+  border-radius: 10px;
+}
+textarea{
+  padding: 10px;
+  border: 1px solid black;
+  font-size: medium;
+  border-radius: 10px;
+}
+#contactform input[type="submit"]{
+  background-color:greenyellow;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: black;
+  font-size: medium;
+}
+#contactimg img{
+  margin-top: 70px;
+  height: 50vh;
+  box-sizing: border-box;
+  box-shadow:  10px 15px 10px black;
+  border-radius: 15px;
+}
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+i{
+  font-size: 30px;
+  margin: 10px;
+}
+footer button{
+  background-color:white;
+  color: black;
+  padding: 5px;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: medium;
+  width: 120px;
+  margin-top: 20px;
+}
+@keyframes colorchange {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@media(max-width:320px){
+  #home{
+    flex-wrap: wrap;
+  }
+  #about{
+    flex-wrap: wrap
+  }
+  #Certificates{
+    flex-wrap: wrap
+  }
+  #Contact{
+    flex-wrap: wrap;
+  }
+} 
+

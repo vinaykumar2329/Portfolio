@@ -1,0 +1,11 @@
+#skills{
+    display: flex;
+    flex-direction: column;  
+}
+#skills progress{
+    height: 30px;
+    width: 150px;
+}
+progress::-webkit-progress-bar{
+    color: aqua;
+}
